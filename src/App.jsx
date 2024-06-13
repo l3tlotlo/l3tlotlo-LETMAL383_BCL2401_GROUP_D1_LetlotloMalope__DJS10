@@ -1,6 +1,5 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState } from 'react';
 import "./App.css"
-
 function App (){
 
   const [posts, setPosts] = useState([]);
@@ -17,5 +16,4 @@ function App (){
   }
 
 )} 
- 
 export default App;

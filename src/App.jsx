@@ -25,9 +25,10 @@ function App (){
 
   fetchPosts()
 )}
+ 
+    return (
+    <div className='App'> 
 
-if (loading) {
-  return <div>Loading...</div>;
-}
-
+    </div>;
+    )
 export default App;

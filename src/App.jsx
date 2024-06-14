@@ -36,7 +36,19 @@ import image from './images/error-message.png'
     <div className="error-message">
       <img src={image} alt=" " /> 
     </div>
-    ):
+    ): (
+      <div className="post-list">
+        {posts.map (post =>(
+      <div key={post.id} className="post">
+      <h2>{post.id}.{post.title}</h2>
+      </div>
+
+        )
+        )
+
+        }
+      </div>
+    )
     }
     </div>
     );

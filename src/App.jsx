@@ -4,6 +4,7 @@ function App (){
 
   const [posts, setPosts] = useState([]);
   const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     const fetchPosts = async  () => {
       try {
@@ -12,6 +13,7 @@ function App (){
        if (!response.ok) {
           throw new Error('Posts not available'); 
         }
+
   }
   }
 

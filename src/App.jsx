@@ -25,4 +25,9 @@ function App (){
 
   fetchPosts()
 )}
+
+if (loading) {
+  return <div>Loading...</div>;
+}
+
 export default App;

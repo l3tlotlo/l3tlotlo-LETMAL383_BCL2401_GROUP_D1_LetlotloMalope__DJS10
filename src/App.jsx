@@ -14,7 +14,10 @@ function App (){
         }
         const data = await response.json();
         setPosts(data);    
-        }
+      } 
+        catch (error){
+        setError(error)
+      }
       }
 
 )} 

@@ -16,13 +16,13 @@ function App (){
         setPosts(data);    
       } 
         catch (error){
-        setError(error)
+        setError(error);
       }
         finally {
-          setloading (false)
+          setloading (false);
         }
-      }
+      };
 
   fetchPosts()
-)} 
+)}
 export default App;

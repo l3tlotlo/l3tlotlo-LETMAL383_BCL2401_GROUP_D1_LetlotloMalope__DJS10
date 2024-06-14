@@ -18,6 +18,9 @@ function App (){
         catch (error){
         setError(error)
       }
+        finally {
+          setloading (false)
+        }
       }
 
 )} 

@@ -1,10 +1,11 @@
 import React, {useEffect, useState } from 'react';
 import "./App.css"
-function App (){
+import image from './images/error-message.png'
 
   const [posts, setPosts] = useState([]);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     const fetchPosts = async  () => {
       try {
@@ -24,11 +25,20 @@ function App (){
       };
 
   fetchPosts()
-)}
+}
  
     return (
     <div className='App'> 
     <h1>Blog Posts</h1>
-    </div>;
-    )
+    {loading ? (<p>Loading...</p>)
+    : error ? 
+    (      
+    <div className="error-message">
+      <img src={image} alt=" " /> 
+    </div>
+    ):
+    }
+    </div>
+    );
+    
 export default App;

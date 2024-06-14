@@ -23,5 +23,6 @@ function App (){
         }
       }
 
+  fetchPosts()
 )} 
 export default App;
